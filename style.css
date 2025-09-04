@@ -258,8 +258,73 @@ main .ten ul li img {
 @media (max-width: 992px) {
   main {
     flex-direction: column;
+    text-align: center;
   }
+  main .left, 
   main .right {
-    order: -1; /* Image first */
+    max-width: 100%;
+  }
+
+  /* Move image section above text */
+  main .right {
+    order: -1;
   }
 }
+
+/* Extra small devices (phones < 576px) */
+@media (max-width: 576px) {
+  main {
+    padding: 60px 15px 30px;
+    gap: 30px;
+  }
+
+  main .four {
+    font-size: 140%;
+  }
+
+  main .five {
+    font-size: 90%;
+    line-height: 1.4;
+  }
+
+  main .six {
+    font-size: 90%;
+  }
+
+  main .seven {
+    font-size: 120%;
+  }
+
+  main .eight {
+    font-size: 110%;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  main .nine img {
+    max-width: 250px;
+  }
+
+  main .ten ul li img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Ultra small devices (< 400px) */
+@media (max-width: 400px) {
+  main .four {
+    font-size: 120%;
+  }
+  main .five {
+    font-size: 85%;
+  }
+  main .nine img {
+    max-width: 200px;
+  }
+  main .ten ul li img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
